@@ -25,7 +25,7 @@ public class App {
 
         Scanner another_input = new Scanner(System.in);
         char c = another_input.next().charAt(0);
-        /* Lines 29 - 40 serve as a precaution in case the user inputs
+        /* Lines 30 - 41 serve as a precaution in case the user inputs
         a lowercase 'y' or 'n' */
         if(c == 'y'){
             c = 'Y';
@@ -49,12 +49,15 @@ public class App {
 
         Scanner input_height = new Scanner(System.in);
         double inches = input_height.nextDouble();
-        if (inches < 0){
-            System.out.println("Negative values are prohibited.");
-            getUserHeight();
+
+        while(inches<0)
+        {
+            System.out.println("Enter your height in inches. Positive values only.");
+            input_height = new Scanner(System.in);
+            inches = input_height.nextDouble();
         }
 
-        // Line 56 calls Scanner's nextLine() to clear the input buffer
+        // Line 61 calls Scanner's nextLine() to clear the input buffer
         String clear_input_buffer = input_height.nextLine();
 
         return inches;
@@ -63,12 +66,19 @@ public class App {
     // getUserWeight() asks the user to input a weight and ensures it is not negative
     public static double getUserWeight(){
 
-        System.out.println("Enter your weight in pounds");
+        System.out.println("Enter your weight in pounds. Positive values only.");
 
         Scanner input_weight = new Scanner(System.in);
         double pounds = input_weight.nextDouble();
 
-        // Line 70 calls Scanner's nextLine() to clear the input buffer
+        while(pounds<0)
+        {
+            System.out.println("Enter your weight in pounds. Positive values only.");
+            input_weight = new Scanner(System.in);
+            pounds = input_weight.nextDouble();
+        }
+
+        // Line 82 calls Scanner's nextLine() to clear the input buffer
         String clear_input_buffer = input_weight.nextLine();
 
         return pounds;
