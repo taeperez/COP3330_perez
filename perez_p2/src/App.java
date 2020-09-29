@@ -45,20 +45,22 @@ public class App {
     // getUserHeight() asks the user to input a height and ensures it is not negative
     public static double getUserHeight() {
 
+        String clear_input_buffer;
         System.out.println("Enter your height in inches. Positive values only.");
 
         Scanner input_height = new Scanner(System.in);
         double inches = input_height.nextDouble();
+
+        // Line 55 calls Scanner's nextLine() to clear the input buffer
+        clear_input_buffer = input_height.nextLine();
 
         while(inches<0)
         {
             System.out.println("Enter your height in inches. Positive values only.");
             input_height = new Scanner(System.in);
             inches = input_height.nextDouble();
+            clear_input_buffer = input_height.nextLine();
         }
-
-        // Line 61 calls Scanner's nextLine() to clear the input buffer
-        String clear_input_buffer = input_height.nextLine();
 
         return inches;
     }
@@ -66,20 +68,22 @@ public class App {
     // getUserWeight() asks the user to input a weight and ensures it is not negative
     public static double getUserWeight(){
 
+        String clear_input_buffer;
         System.out.println("Enter your weight in pounds. Positive values only.");
 
         Scanner input_weight = new Scanner(System.in);
         double pounds = input_weight.nextDouble();
+
+        //Line 78 calls Scanner's nextLine() to clear the input buffer
+        clear_input_buffer = input_weight.nextLine();
 
         while(pounds<0)
         {
             System.out.println("Enter your weight in pounds. Positive values only.");
             input_weight = new Scanner(System.in);
             pounds = input_weight.nextDouble();
+            clear_input_buffer = input_weight.nextLine();
         }
-
-        // Line 82 calls Scanner's nextLine() to clear the input buffer
-        String clear_input_buffer = input_weight.nextLine();
 
         return pounds;
     }
