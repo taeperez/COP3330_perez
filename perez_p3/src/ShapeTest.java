@@ -7,7 +7,6 @@ class ShapeTest {
         Shape shape = new Square(10);
         assertEquals("square", shape.getName());
     }
-}
 
     @Test
     public void testSquareArea() {
@@ -15,7 +14,6 @@ class ShapeTest {
         assertEquals(100, shape.getArea());
     }
 
-    /* 
     @Test
     public void testSquareArea2() {
         Shape2D shape = new Square(0.5);
@@ -28,6 +26,8 @@ class ShapeTest {
         assertEquals("triangle", shape.getName());
     }
 
+}
+/*
     @Test
     public void testTriangleArea() {
         Shape2D shape = new Triangle(10,10);
