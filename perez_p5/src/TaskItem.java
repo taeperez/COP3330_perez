@@ -22,4 +22,16 @@ public class TaskItem {
         this.dueDate = date;
         this.completed = false;
     }
+
+    public String getTitle(){
+        return title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public LocalDate getDueDate() {
+        return dueDate;
+    }
 }
