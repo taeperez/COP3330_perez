@@ -15,7 +15,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("",c.getEmailAddress());
+        assertEquals("", c.getEmailAddress());
     }
 
     @Test
@@ -24,7 +24,7 @@ class ContactItemTest {
         assertEquals("", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
 
     @Test
@@ -33,7 +33,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
 
     @Test
@@ -42,7 +42,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
 
     @Test
@@ -51,7 +51,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
 
     @Test
@@ -67,7 +67,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("",c.getEmailAddress());
+        assertEquals("", c.getEmailAddress());
     }
 
     @Test
@@ -76,7 +76,7 @@ class ContactItemTest {
         assertEquals("", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
 
     @Test
@@ -85,7 +85,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
 
     @Test
@@ -94,7 +94,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
 
     @Test
@@ -103,6 +103,7 @@ class ContactItemTest {
         assertEquals("Ariana", c.getFirstName());
         assertEquals("Grande", c.getLastName());
         assertEquals("1567693435", c.getPhoneNumber());
-        assertEquals("arianagrande@positions.com",c.getEmailAddress());
+        assertEquals("arianagrande@positions.com", c.getEmailAddress());
     }
-    
+}
+
